@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us – Fiorello</title>
+    <link rel="icon" href="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/cropped-Favicon-32x32.png"
+        sizes="32x32">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+    <link rel="stylesheet" href="../src/scss/style.css">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="nav_bar">
+            <div class="container">
+                <div class="top_bar">
+                    <div class="top_logo"> <a class="logo_a" href="https://fiorello.qodeinteractive.com/"><img
+                                class="logo" src="./images/Logo.img" alt=""></a>
+                    </div>
+                    <div class="top_right">
+                        <ul class="menu">
+                            <li class="menu-li"><a class="menu-li-a" href="#">Home</a>
+                                <ul class="submenu">
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="./index.html">Main
+                                            Home</a></li>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/grid-home/">Grid
+                                            Home</a></li>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/flower-shop/">Flower
+                                            Shop</a>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/animated-slider/">Animated
+                                            Slider</a>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/metro-showcase/">Metro
+                                            Showcase</a>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/carousel-showcase/">Carousel
+                                            Showcase</a>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/landing/">Landing</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-li-1st"><a class="menu-li-a" href="#">Pages</a>
+                                <ul class="submenu">
+                                    <li class="sub_li"><a class="sub_a" href="../public/about.html">About
+                                            Us</a></li>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/faq-page/">FAQ
+                                            Page</a></li>
+                                    <li class="sub_1st_li"><a class="sub_a" href="../public/contact.html">Contact
+                                            Us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-li"><a class="menu-li-a" href="#">Shop</a>
+                                <ul class="big_dropdown">
+                                    <li class="big_dropdown_li">
+                                        <h3>Product Types</h3>
+                                        <ul class="drop">
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/orange-amaryllis/">Standart
+                                                    Product</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/rock-soapwort/">Grouped
+                                                    Product</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/pink-flower-tree/">Variable
+                                                    Product</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/colorful-tulips/">Virtual
+                                                    Product</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/wild-roses/">External
+                                                    Product</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/summer-savory/">Downlloadable
+                                                    Product</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/scarlet-sage/">On
+                                                    Sale Product</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/sweet-alyssum/">Out
+                                                    Of Stock
+                                                    Product</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product/schefflera/">New
+                                                    Product</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="big_dropdown_li">
+                                        <h3>Shop Pages</h3>
+                                        <ul class="drop">
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/my-account/">My
+                                                    Account</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/cart/">Cart</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/checkout/">Checkout</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/my-account/orders/">Orders</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/my-account/downloads/">Downloads</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="big_dropdown_li">
+                                        <h3>Shop Types</h3>
+                                        <ul class="drop">
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-list/">Product
+                                                    List</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-list/without-sidebar/">Without
+                                                    Sidebar</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/with-category-filter/">With
+                                                    Category
+                                                    Filter</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/with-ordering-filter/">With
+                                                    Ordering
+                                                    Filter</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/shop-carousel/">Shop
+                                                    Carousel</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-categories/">Product
+                                                    Categories</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-category/various/">Single
+                                                    Category</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="big_dropdown_li">
+                                        <h3>Shop Layouts</h3>
+                                        <ul class="drop">
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-list/two-columns-grid/">Two
+                                                    Columns Grid</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/three-columns-grid/">Three
+                                                    Columns Grid</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-list/four-columns-grid/">Four
+                                                    Columns Grid</a>
+                                            </li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-list/four-columns-wide/">Four
+                                                    Columns Grid
+                                                    Wide</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-list/five-columns-wide/">Five
+                                                    Columns Grid
+                                                    Wide</a></li>
+                                            <li class="drop_li"><a class="drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/product-list/six-columns-wide/">Six
+                                                    Columns Grid
+                                                    Wide</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-li"><a class="menu-li-a" href="#">Portfolio</a>
+                                <ul class="submenu">
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/portfolio-standard/">Standart</a>
+                                    </li>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/portfolio-gallery/">Gallery</a>
+                                    </li>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/portfolio-masonry/">Masonry</a>
+                                    </li>
+                                    <li class="extra_sub_li"><a class="sub_a" href="#">Portfolio Layout</a>
+                                        <div class="extra_icon">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <ul class="extra_drop">
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-gallery/two-columns/">Two
+                                                    Columns </a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-gallery/three-columns/">Three
+                                                    Columns </a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-gallery/four-columns/">Four
+                                                    Columns Wide</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-gallery/five-columns-wide/">Five
+                                                    Columns Wide</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="extra_sub_li"><a class="sub_a" href="#">Portfolio Single</a>
+                                        <div class="extra_icon">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <ul class="extra_drop">
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-item/flower-power/">Small
+                                                    Images</a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-item/floristry-shops/">Small
+                                                    Slider </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-item/english-garden/">Big
+                                                    Images</a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-item/dutch-style/">Big
+                                                    Slider </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/portfolio-item/ikebana/">Gallery</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-li"><a class="menu-li-a" href="#">Blog</a>
+                                <ul class="submenu">
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/blog-masonry/">Masonry</a>
+                                    </li>
+                                    <li class="sub_li"><a class="sub_a"
+                                            href="https://fiorello.qodeinteractive.com/blog-standard-right-sidebar/">Standart</a>
+                                    </li>
+                                    <li class="extra_sub_li"><a class="sub_a" href="#">Post Types</a>
+                                        <div class="extra_icon">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <ul class="extra_drop">
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/creating-messages-of-magnificence/">
+                                                    Standart </a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/beautiful/">Gallery
+                                                </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/we-dont-just-create-bouquets-we-create-emotions/">Link</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/your-first-choice/">Quote</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/the-sound-of-flowers/">Audio</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/making-bouquets/">Video</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-li"><a class="menu-li-a" href="#">Elements</a>
+                                <ul class="submenu">
+                                    <li class="extra_sub_li"><a class="sub_a" href="#">Classic</a>
+                                        <div class="extra_icon">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <ul class="extra_drop">
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/accordions/">
+                                                    Accordions </a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/tabs/">Tabs
+                                                </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href=https://fiorello.qodeinteractive.com/elements/buttons/">Buttons</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/video-button/">Video
+                                                    Button</a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/contact-form/">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="extra_sub_li"><a class="sub_a" href="#">Infographic</a>
+                                        <div class="extra_icon">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <ul class="extra_drop">
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/blog-list/">
+                                                    Blog List </a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/counters/">Counters
+                                                </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/countdown/">Countdown</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/google-maps/">Google
+                                                    Maps</a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/progress-bar/">Progress
+                                                    Bar</a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/pie-charts/">Pie
+                                                    Charts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="extra_sub_li"><a class="sub_a" href="#">Interactive</a>
+                                        <div class="extra_icon">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <ul class="extra_drop">
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/image-gallery/">
+                                                    Image Gallery
+                                                </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/testimonials/">Testimonials
+                                                </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/team/">Team</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/banner/">Banner</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/shop-list/">Shop
+                                                    List</a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/portfolio-list/">Portfolio
+                                                    List</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="extra_sub_li"><a class="sub_a" href="#">Typography</a>
+                                        <div class="extra_icon">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </div>
+                                        <ul class="extra_drop">
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/headings/">
+                                                    Headings</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/columns/">Columns
+                                                </a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/section-title/">Section
+                                                    Title</a></li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/blockquote/">Bl0ckquote</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/dropcaps/">Dropcaps</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/highlights/">Highlights</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/separators/">Seperators</a>
+                                            </li>
+                                            <li class="extra_drop_li"><a class="extra_drop_a"
+                                                    href="https://fiorello.qodeinteractive.com/elements/custom-font/">Custom
+                                                    Font</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="a-icon" href="#"><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i></a>
+                        <div class="add-to-cart">
+                            <a class="a-addtocart" href="https://fiorello.qodeinteractive.com/cart/">
+                                <span class="span-bag-icon">
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                    <span class="span_item_nmbr">0</span>
+                                </span>
+                                <span class="span_cart">
+                                    <span>Cart</span>
+                                    <span>($0)</span>
+                                </span>
+                            </a>
+                            <ul class="card_hover">
+                                <li class="card_hover_li">No products in the cart</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="respon_canva">
+                        <button class="btn btn  " type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample"
+                            aria-labelledby="offcanvasExampleLabel">
+
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                </h5>
+
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Home
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <ul class="submenu">
+                                                <li class="sub_1st_li">
+                                                    <a class="sub_a" href="https://fiorello.qodeinteractive.com/">Main
+                                                        Home</a>
+                                                </li>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="https://fiorello.qodeinteractive.com/grid-home/">Grid
+                                                        Home</a>
+                                                </li>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="https://fiorello.qodeinteractive.com/flower-shop/">Flower
+                                                        Shop</a>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="https://fiorello.qodeinteractive.com/animated-slider/">Animated
+                                                        Slider</a>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="https://fiorello.qodeinteractive.com/metro-showcase/">Metro
+                                                        Showcase</a>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="https://fiorello.qodeinteractive.com/carousel-showcase/">Carousel
+                                                        Showcase</a>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="https://fiorello.qodeinteractive.com/landing/">Landing</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Pages
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <ul class="submenu">
+                                                <li class="sub_li"><a class="sub_a" href="../public/about.html">About
+                                                        Us</a>
+                                                </li>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="https://fiorello.qodeinteractive.com/faq-page/">FAQ
+                                                        Page</a>
+                                                </li>
+                                                <li class="sub_li"><a class="sub_a"
+                                                        href="../public/contact.html">Contact
+                                                        Us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Shop
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse1stofThird" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading1stofThird"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-heading1stofThird">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#flush-collapse1stofThird" aria-expanded="false"
+                                                        aria-controls="flush-collapse1stofThird">
+                                                        Product
+                                                        Types
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapse1stofThird" class="accordion-collapse collapse"
+                                                    aria-labelledby="flush-heading1stofThird"
+                                                    data-bs-parent="#accordionFlushExample">
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/orange-amaryllis/">Standart
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/rock-soapwort/">Grouped
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/pink-flower-tree/">Variable
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/colorful-tulips/">Virtual
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/wild-roses/">External
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/summer-savory/">Downlloadable
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/scarlet-sage/">On
+                                                            Sale
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/sweet-alyssum/">Out
+                                                            Of
+                                                            Stock
+                                                            Product</a>
+                                                    </li>
+                                                    <li class="drop_li">
+                                                        <a class="drop_a"
+                                                            href="https://fiorello.qodeinteractive.com/product/schefflera/">New
+                                                            Product</a>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                                Portfolio
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                                aria-expanded="false" aria-controls="flush-collapseFive">
+                                                Blog
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingSix">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                                aria-expanded="false" aria-controls="flush-collapseSix">
+                                                Elements
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d33431.904295459484!2d49.85961349983568!3d40.398354575753814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sBaki!5e0!3m2!1saz!2saz!4v1699822250926!5m2!1saz!2saz" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </section>
+        
+        <section class="login">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="half_login">
+                            <div class="login_slider_image">
+                            <img src="images/testimonial-img-2.png" alt="">
+                          </div>
+                        <div class="login_video_content">
+                            <h2 class="login_content_title"> We take  <span
+                                            class="login_differ">flowers</span> personally
+                                            & we bring you happiness.</h2>
+                            <p class="login_content_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
+                            <img src="./images/h2-sign-img.png" alt="">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="form">
+                           <h2 class="form_h"> Get in Touch!</h2>
+                            <p class="form_p"> Class aptent taciti sociosqu ad litora torquent per conubia nostr. Mauris in erat justullam ac urna eu felis dapib</p>
+                        </div>
+                        <form class="form_login">
+                            <input  class="data_holder" type="text"   name="username" placeholder="Your Full Name..." required >
+                            <input  class="data_holder" type="email"  name="usermail" placeholder="Email" required >
+                            <input  class="data_holder" type="number"  name="usernumber" placeholder="Phone" required >
+                            <textarea  class="data_holder" id="" cols="40" rows="4" name="userinfo" placeholder="Write something..."></textarea>
+                            <input  class="submit_button"  type="submit">
+                            
+                        </form>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+       
+    </main>
+
+    
+    <footer>
+        <div class="container">
+          <div class="footer_top">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="ftr_menu_title">CUSTOMER SERVICE</div>
+                <ul class="footer_menu">
+                    <li><a href="#">Help & Contact Us</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Online Stores</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="ftr_menu_title">COMPANY</div>
+                <ul class="footer_menu">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">FAQ Page</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="ftr_menu_title">SOCIAL MEDIA</div>
+                <ul class="footer_menu">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tumblr</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="ftr_menu_title">ARCHIVE</div>
+                <ul class="footer_menu">
+                    <li><a href="#">Designer Shoes</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Feature Index</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Help & Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom">
+              <div class="footer_bottom_container">
+                <div class="copyright">
+                  © 2018
+                  <a href="#">Qode Interactive</a>
+                  <span>, All Rights Reserved</span>
+                </div>
+                <div class="visa">
+                    <img src="./images/footer-bottom-1.png" alt="">
+                </div>
+                <div class="footer_social_media">
+                  <a href="#">INSTAGRAM</a>
+                  <a href="#">FACEBOOK</a>
+                </div>
+              </div>
+          </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/60b5d62528.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "fade",
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="../src/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+
+
+
+</body>

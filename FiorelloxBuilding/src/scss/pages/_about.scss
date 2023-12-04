@@ -1,0 +1,207 @@
+.about_background{
+    background-color: $white;
+    .about_back_image{
+        background-image: url('/FiorelloxBuilding/public/images/p1-title-img.jpg');
+        height: 332px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 59px;
+        background-attachment: fixed;
+        position: relative;
+        .about_back_image_inner{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            .about_back_image_title{
+              .about_title_inner{
+                text-align: center;
+                text-transform: capitalize;
+                font-size: 50px;
+                font-weight: 400;
+                line-height: 66px;
+                color: #0e0e0e;
+                // margin-bottom: 19px;
+              }
+               .about_text{
+                font-size: 17px;
+                font-style: italic;
+                text-transform: none;
+                letter-spacing: 0;
+                font-family: Lora,serif;
+                color: #6d6a6a; 
+               }
+            }
+        }
+    }
+}
+
+.about_video {
+  padding: 120px 0px;
+  background-color: #f7f7f7;
+  .modal-bg{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .about_video_image {
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .about_video_image_inner {
+        transform: scale(1.03);
+      }
+    }
+
+    .about_video_image_inner {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .3s ease-in-out;
+    }
+
+    .about_circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      background-color: $white;
+      @include Flex($a-item:center,$just:center);
+
+      .about_inner {
+        width: 0;
+        height: 0;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        border-left: 15px solid $orange;
+      }
+    }
+  }
+  .about_video_content {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    max-width: 490px;
+
+    .about_content_title {
+      font-size: 38px;
+      padding-right: 10px;
+      line-height: 55px;
+      font-weight: 400;
+      color: rgb(43, 43, 43);
+      .about_differ {
+        color: $orange;
+      }
+    }
+    .about_content_text{
+      font-family: 'Lora', serif;
+      margin-top: 27px;
+      font-size: 17px;
+      line-height: 29px;
+      color: $lightgray;
+    }
+}
+}
+
+.about_experts{
+    padding: 120px 0;
+    // background-color: $white;
+    .heading_expert{
+      text-align: center;
+      padding: 30px;
+      .heading_title{
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 55px;
+      }
+      .heading_p{
+        font-family: 'Lora', serif;
+        padding: 10px 30px;
+        color:$lightgray;
+        font-size: 17px;
+        line-height: 29px;
+      }
+    }
+    .expert_pic{
+      padding: 20px;
+      .pic{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .experts_info{
+      text-align: center;
+      .experts_name{
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        line-height: 24px;
+      }
+      .experts_job{
+        font-size: 12px;
+        line-height: 24px;
+        color: #afafaf;
+      }
+    }
+}
+
+.mini_slider{
+    background-color: $white;
+    padding: 84px 0px;
+    .mySwiper{
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        display: none;
+      }
+  
+      span {
+        svg {
+          // display: inline-block;
+          width: 40px;
+          height: 50px;
+          fill: $gray;
+          color: $gray;
+  
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+      .mini_slider_container{
+        @include Flex($a-item:center,$just:center,$f-dir:column);
+        .mini_slider_content{
+            text-align: center;
+            .mini_slider_info{
+                max-width: 600px;
+                font-style: italic;
+                padding-top: 38px;
+                font-family: 'Lora', serif;
+                font-size: 24px;
+                line-height: 36px;
+                color: #4b4747;
+            }
+            .mini_slider_name{
+                text-transform: uppercase;
+                padding: 38px 0px;
+                padding-bottom: 30px;
+                font-size: 12px;
+                font-weight: 500;
+                font-style: normal;
+                letter-spacing: 1.2px;
+                color: $lightblack;
+                p{
+                    padding: 5px 0px;
+                    text-transform: capitalize;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    color: #afafaf;
+                }
+            }
+        }
+    }
+    }
+   
+}

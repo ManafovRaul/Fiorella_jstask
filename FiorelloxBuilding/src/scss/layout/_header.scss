@@ -1,0 +1,372 @@
+.nav_bar {
+    padding: 40px;
+    @include Img(
+        $wid: 100%
+    );
+    background-color: $white;
+    .top_bar {
+        @include Flex( 
+            $just: space-between, $a-item:center
+        );
+            
+
+        .top_logo {
+            width: 205px;
+            .logo_a {
+                .logo {
+                    @include Img(
+                        $wid:100%,
+                        $heit:100%,
+                        $o_fit:cover
+                    );
+                }
+            }
+        }
+        .top_right {
+            display: flex;
+            @media (max-width: 1024px){
+                display: none;
+            }  
+            .menu {
+                display: flex;
+                margin-right: 20px;
+
+                .menu-li-1st {
+                    position: relative;
+                    margin: 0 30px;
+
+                    &:hover {
+                        .submenu {
+                           @include Img(
+                            $opacity:1,
+                            $visib:visible
+                           );
+
+                        }
+                    }
+
+                    .submenu {
+                        @include Img(
+                            $pos:absolute,
+                            $top:70px,
+                            $left:-50px,
+                            $wid:210px,
+                            $opacity:0,
+                            $visib:hidden,
+                            $z_index:11
+                        );
+                        background-color: $white;
+                        padding: 10px;
+                        transition: all .5s ease-in-out;
+                        .sub_li {
+                            padding: 5px;
+                            .sub_a {
+                                @extend %_sub-a;
+                            }
+                        }
+
+                        .sub_1st_li {
+                            padding: 5px;
+                            .sub_a {
+                                position: relative;
+                                @include Text(
+                                    $f-size:13px,
+                                    $l-height:19px
+                                );
+                                color: #737373;
+
+                                &::after {
+                                    content: "";
+                                    @include Img(
+                                        $pos:absolute,
+                                        $botom:0px,
+                                        $left:0px,
+                                        $wid:100%,
+                                        $heit:1px
+                                    );
+                                    background-color: $lightblack;
+                                }
+                            }
+                        }
+                    }
+
+                    .menu-li-a {
+                        @include Text(
+                            $f-size:12px,
+                            $f-weight:500,
+                            $l-spacing:1.2px,
+                            $l-height:19px
+                        );
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: 1.2px;
+                        line-height: 22px;
+                        text-transform: uppercase;
+                        color: $lightblack;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 8px;
+                        left: 0;
+                        height: 1px;
+                        width: 100%;
+                        background-color: $lightblack;
+                    }
+                }
+
+                .menu-li {
+                    position: relative;
+                    margin: 0 30px;
+
+                    .menu-li-a {
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: 1.2px;
+                        line-height: 22px;
+                        text-transform: uppercase;
+                        color: $lightblack;
+
+                        &:hover {
+                            &::after {
+                                width: 100%;
+
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 8px;
+                            left: 0;
+                            height: 1px;
+                            width: 0%;
+                            background-color: $lightblack;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+
+                    &:hover {
+                        .submenu {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                    }
+
+                    .submenu {
+                        @include Img(
+                            $pos:absolute,
+                            $top:70px,
+                            $left:-50px,
+                            $wid:210px,
+                            $opacity:0,
+                            $visib:hidden,
+                            $z_index:11
+                        );
+                        background-color: $white;
+                        padding: 10px;
+                        transition: all .5s ease-in-out;
+                        .extra_sub_li{
+                            position: relative;
+                            padding: 5px;
+                                .extra_icon{
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 10px;
+                                    display: inline;
+                                    color: #737373;
+                                    font-size: 10px;
+                                    font-style: normal; 
+                                    font-weight: 400;
+                                }
+                                
+                            &:hover{
+                                .extra_drop{
+                                    visibility: visible;
+                                    opacity: 1;
+                                }
+                            }
+                            .extra_drop{
+                                position: absolute;
+                                background-color: $white;
+                                width: 250px;
+                                left: 200px;
+                                top: -20px;
+                                transition: all .3s ease-in-out;
+                                visibility: hidden;
+                                opacity: 0;
+                                .extra_drop_li {
+                                    padding: 10px;
+                                    .extra_drop_a {
+                                       @extend %_extra-drop-a ;
+                                    }
+                                }
+                            }
+                            .sub_a {
+                               @extend %_sub-a;
+                            }
+                        }
+                        .sub_li {
+                            padding: 5px;
+                            .sub_a {
+                                @extend %_sub-a;
+                            }
+                        }
+                    }
+                    &:hover {
+                        .big_dropdown {
+                            visibility: visible;
+                        }
+                    }
+                    .big_dropdown {
+                        z-index: 11;
+                        @include Flex($just:space-around);
+                        position: absolute;
+                        top: 70px;
+                        right: -1450%;
+                        background-color: $white;
+                        width: 1310px;
+                        visibility: hidden;
+                        transition: all .5s ease-in-out;
+                        .big_dropdown_li {
+                            @include Text(
+                                $f-size:22px,
+                                $f-weight:500
+                            );
+                            padding-top: 20px;
+                            font-size: 22px;
+                            color: $lightblack;
+
+                            .drop {
+                                padding: 24px 0px;
+                                .drop_li {
+                                    padding: 8px 0px;
+                                        .drop_a {
+                                            @extend%_sub-a;
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .a-icon {
+                color: #1b2024;
+                @include Text (
+                    $f-size:19px
+                );
+                padding-right: 30px;
+                &:hover{
+                    color: $orange;
+                }
+            }
+            .add-to-cart {
+                position: relative;
+                &:hover{
+                    .card_hover{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+                .card_hover{
+                    position: absolute;
+                    top: 70px;
+                    left: -140px;
+                    z-index: 111;
+                    background-color: $white;
+                    width: 250px;
+                    padding: 20px 10px 25px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all .5s ease-in-out;
+                    .card_hover_li{
+                        @include Text(
+                            $f-size:13px,
+                            $f-weight:500,
+                            $l-height:24px
+                        );
+                        color: $lightgray;
+                    }
+                }
+                .a-addtocart {
+                    .span-bag-icon {
+                        position: relative;
+                        color: #1b2024;
+                        @include Text(
+                            $f-size: 21px,
+                            $l-height: 1px
+                        );
+                        vertical-align: top;
+                        padding-right: 14px;
+                        .span_item_nmbr {
+                            position: absolute;
+                            top: -1px;
+                            left: 11px;
+                            width: 13px;
+                            height: 13px;
+                            @include Text(
+                                $f-size:8px,
+                                $f-weight:600,
+                                $l-height:1.1rem
+                            );
+                            background-color: $orange;
+                            color: $white;
+                            border-radius: 50%;
+                            text-align: center;
+                        }
+                    }
+
+                    .span_cart {
+                        text-transform: uppercase;
+                        color: $lightblack;
+                        @include Text(
+                            $f-size: 12px,
+                            $f-weight: 500,
+                            $l-spacing: .1rem,
+                            $l-height: 27px
+                        );
+                       
+                    }
+                }
+            }
+        }
+        .respon_canva{
+            @media (min-width: 1025px){
+                display: none;
+            } 
+            .collapse{
+              .submenu{
+                .sub_1st_li{
+                    padding:7px 5px;
+                    .sub_a{
+                        position: relative;
+                        color: $black;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            height: 1px;
+                            width: 100%;
+                            background-color: $lightblack;
+                            transition: all .3s ease-in-out;
+                        }
+                    }
+                    
+                }
+                .sub_li{
+                    padding: 5px;
+                    .sub_a{
+                        color: $black;
+                    }
+                    
+                }
+              }
+            }
+        }
+    }
+}
+

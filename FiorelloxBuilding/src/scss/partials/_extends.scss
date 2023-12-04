@@ -1,0 +1,47 @@
+%_sub-a {
+    position: relative;
+    font-size: 13px;
+    color: #737373;
+    line-height: 19px;
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 0%;
+        background-color: $lightblack;
+        transition: all .3s ease-in-out;
+    }
+}
+
+%_extra-drop-a {
+    position: relative;
+    font-size: 13px;
+    color: #737373;
+    line-height: 19px;
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 0%;
+        background-color: #1b1b1b;
+        transition: all .3s ease-in-out;
+    }
+}
